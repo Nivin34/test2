@@ -1,0 +1,61 @@
+/* Container for the entire section */
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Styling for contact information section */
+.contact-info {
+  flex: 1;
+}
+
+.contact-item {
+  margin-bottom: 30px;
+}
+
+.contact-item h3 {
+  font-size: 1.5em;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.contact-item p {
+  font-size: 1em;
+  color: #555;
+  margin: 0;
+}
+
+/* Styling for Google Map section */
+.contact-map {
+  flex: 1;
+  min-width: 400px;
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 400px;
+  border-radius: 8px;
+  border: 0;
+}
+ Label{
+  color:#000 !important;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+  }
+
+  .contact-map iframe {
+    height: 300px;
+  }
+
+  .contact-info {
+    margin-bottom: 20px;
+  }
+}
