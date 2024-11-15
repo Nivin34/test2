@@ -41,7 +41,7 @@ export default function Header() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto align-items-center">
               <Nav.Link href="/" className="nav-link mx-2">Home</Nav.Link>
-              <Nav.Link href="/about" className="nav-link mx-2">About Us</Nav.Link>
+              <Nav.Link href="/about" className="nav-link mx-2 ">About Us</Nav.Link>
 
               {/* Dropdown with hover */}
               <Dropdown
@@ -50,7 +50,7 @@ export default function Header() {
                 show={showDropdown}
                 className="mx-2"
               >
-                <Dropdown.Toggle variant="link" className="nav-link dropdown-toggle-icon-adjust" style={{paddingRight:'1rem'}} >
+                <Dropdown.Toggle variant="link" className="nav-link dropdown-toggle-icon-adjust" style={{paddingRight:'2rem', position:'relative'}} >
                   Properties
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
@@ -62,7 +62,7 @@ export default function Header() {
 
               <Nav.Link href="/ContactPage" className="nav-link mx-2">Contact Us</Nav.Link>
 
-              <div className="d-flex align-items-center mx-3">
+              <div className="d-flex align-items-center mx-3 ">
                 {isAuthenticated ? (
                   <Dropdown className="d-inline">
                     <Dropdown.Toggle variant="default text-black" style={{paddingRight:'2rem'}}>
@@ -87,7 +87,7 @@ export default function Header() {
                     </Dropdown.Menu>
                   </Dropdown>
                 ) : (
-                  <Link to="/login" className="btn" id="login_btn">
+                  <Link to="/login" className="btn " id="login_btn">
                     Login
                   </Link>
                 )}

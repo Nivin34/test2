@@ -140,7 +140,7 @@ nav {
   padding: 1rem 1rem;
 }
 .ms-auto {
-  margin-left: 18%;
+  margin-left: 16%;
 }
 .company-name{
   font-family:'Inknut Antiqua';
@@ -204,6 +204,7 @@ nav {
   padding: 0.4rem 1.8rem;
   font-family: calibri;
 }
+
 
 #cart {
   font-size: 1rem;

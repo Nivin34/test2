@@ -8,6 +8,9 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+.contact{
+  height: 130vh;
+}
 
 /* Styling for contact information section */
 .contact-info {
@@ -50,7 +53,9 @@
   .contact-section {
     flex-direction: column;
   }
-
+ .contact{
+  height: 150vh;
+ }
   .contact-map iframe {
     height: 300px;
   }
@@ -58,4 +63,14 @@
   .contact-info {
     margin-bottom: 20px;
   }
+  .contact-item h3 {
+    font-size: 1.2em;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  .contact-item p {
+    font-size: 0.9em;
+    color: #555;
+    margin:0;
+}
 }

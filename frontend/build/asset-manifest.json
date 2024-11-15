@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f1fa7a7b.css",
-    "main.js": "/static/js/main.6eb83c9f.js",
+    "main.css": "/static/css/main.3cda768c.css",
+    "main.js": "/static/js/main.f75e997d.js",
     "static/media/blueprint2.mp4": "/static/media/blueprint2.ed52921ae542e9c4bcda.mp4",
     "static/media/Guduvancheri.png": "/static/media/Guduvancheri.26e2ee58b4d4ec70c40b.png",
     "static/media/Enclave.png": "/static/media/Enclave.e615ffcf39eafeac8eb4.png",
@@ -48,11 +48,11 @@
     "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
-    "main.f1fa7a7b.css.map": "/static/css/main.f1fa7a7b.css.map",
-    "main.6eb83c9f.js.map": "/static/js/main.6eb83c9f.js.map"
+    "main.3cda768c.css.map": "/static/css/main.3cda768c.css.map",
+    "main.f75e997d.js.map": "/static/js/main.f75e997d.js.map"
   },
   "entrypoints": [
-    "static/css/main.f1fa7a7b.css",
-    "static/js/main.6eb83c9f.js"
+    "static/css/main.3cda768c.css",
+    "static/js/main.f75e997d.js"
   ]
 }

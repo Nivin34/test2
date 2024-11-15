@@ -51,7 +51,7 @@ const ContactPage = () => {
   );
 
   return (
-    <div className='contact' style={{height: '130vh',}}>
+    <div className='contact' style={{}}>
     <div
       style={{
         backgroundImage: `url(${bg})`,

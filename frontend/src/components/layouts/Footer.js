@@ -30,7 +30,7 @@ const Footer = () => {
       <a href="https://www.youtube.com/@praveenpropertydevelopers1828" target="_blank" rel="noopener noreferrer">
   <FaYoutube size={30} color="#FF0000" />
 </a>
-<a href="https://www.twitter.com/yourprofile" target="_blank" rel="noopener noreferrer">
+<a href="https://x.com/PRAVEENPROP111" target="_blank" rel="noopener noreferrer">
   <FaXTwitter  size={30} color="#000" />
 </a>
 <a href="https://www.linkedin.com/in/praveen-property-developers-a27183182/" target="_blank" rel="noopener noreferrer">

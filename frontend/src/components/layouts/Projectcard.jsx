@@ -99,15 +99,7 @@ const Projects = () => {
   justifyContent: 'center'
 }}>
   {/* Split heading into individual letters for staggered animation */}
-  <h2 style={{
-    fontSize: '5rem',
-    color: '#fff',
-    position: 'relative',
-    padding: '10px 20px',
-    textShadow: '2px 2px 10px rgba(0, 0, 0, 0.5)',
-    display: 'inline-block',
-    overflow: 'hidden',
-  }}>
+  <h2 className='heading' >
     {
       // Splitting the text "Ongoing Projects" into individual characters
       "Ongoing Projects".split('').map((char, index) => (
@@ -126,6 +118,15 @@ const Projects = () => {
   
   <style>
     {`
+    .heading {
+    font-size: 5rem;
+    color: #fff;
+    position: relative;
+    padding: 10px 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    overflow:hidden;
+    }
       @keyframes borderMove {
         0% { background-position: 0% 50%; }
         100% { background-position: 100% 50%; }
@@ -272,6 +273,17 @@ const Projects = () => {
             grid-template-columns: repeat(2, 1fr);
           }
         }
+         /* Responsive styles */
+  @media (max-width: 768px) {
+    .heading {
+      font-size: 2.2rem; /* Adjust font size for tablet view */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .heading {
+      font-size: 1.8rem; /* Adjust font size for mobile view*/
+}} 
         @media (max-width: 576px) {
           .projects-grid {
             grid-template-columns: repeat(1, 1fr);
@@ -279,7 +291,7 @@ const Projects = () => {
           .project-image {
             height: 150px;
           }
-        }
+            
       `}</style>
     </section>
   );
