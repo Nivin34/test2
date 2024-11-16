@@ -66,7 +66,7 @@ export default function Register() {
 
             <div className="form-group">
                 <label htmlFor="email_field">Name</label>
-                <input name='name' onChange={onChange} type="name" id="name_field" className="form-control" maxLength="5" required  />
+                <input name='name' onChange={onChange} type="name" id="name_field" className="form-control" maxLength="7" required  />
             </div>
 
                 <div className="form-group">
@@ -91,6 +91,7 @@ export default function Register() {
                     id="password_field"
                     className="form-control"
                     required 
+                    maxLength="8"
                 />
                 </div>
 

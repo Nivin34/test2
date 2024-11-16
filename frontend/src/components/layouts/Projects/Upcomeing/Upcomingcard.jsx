@@ -140,8 +140,8 @@ const Upcoming = () => {
 </div>
 
 
-      <h2 className="section-title"></h2>
-      <div className="projects-grid">
+      <h2 className="section-title "></h2> <br />
+      <div className="projects-grid my-5">
         {projectsData.map((project, index) => (
           <div key={index} ref={el => (cardsRef.current[index] = el)} data-index={index}>
             <ProjectCard {...project} isVisible={visibleCards[index]} index={index} />

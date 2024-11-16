@@ -79,7 +79,7 @@ function App() {
         <HelmetProvider>
             <Header/>
            
-            <CustomCursor/>
+            {/* <CustomCursor/> */}
             {/* <Pop/> */}
                 <div className=' container-fluid'>
                   <ToastContainer theme='dark' />

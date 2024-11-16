@@ -192,8 +192,8 @@ const LocationCard = ({ name, image, amenities }) => {
           font-size: 24px;
           font-weight: 800;
           font-family: 'Averia Serif Libre', serif;
-          color: #000;
-           text-shadow: 5px 5px 15px #000;
+          color: #3F070E;
+           text-shadow: 5px 5px 15px #3F070E;
         
           text-transform: uppercase;
           margin-bottom: 10px;
@@ -262,6 +262,18 @@ const LocationCard = ({ name, image, amenities }) => {
           .back-amenities {
             font-size: 12px;
           }
+                .location-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Averia Serif Libre', serif;
+    text-transform: uppercase;
+    letter-spacing: 4.5px;
+    transition: top 0.6s ease-out;
         }
 
         @media (max-width: 576px) {

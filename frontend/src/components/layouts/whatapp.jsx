@@ -2,7 +2,7 @@ import React from 'react';
 import { FaWhatsappSquare } from 'react-icons/fa';
 
 const WhatsAppButton = () => {
-  const phoneNumber = '+918939054111'; // Your WhatsApp number with country code
+  const phoneNumber = '+919884961853'; // Your WhatsApp number with country code
   const message = 'Welcome To Praveen Property Developers'; // Default message (optional)
 
   const handleWhatsAppClick = () => {

@@ -148,9 +148,9 @@ const Projects = () => {
 
 
       {/* <h2 className="section-title">Recently Added Projects</h2> */}
-      <br /> <br />
+    <br /> <br />
 
-      <div className="projects-grid">
+      <div className="projects-grid my-5">
         {projectsData.map((project, index) => (
           <div key={index} ref={el => (cardsRef.current[index] = el)} data-index={index}>
             <ProjectCard {...project} isVisible={visibleCards[index]} index={index} />

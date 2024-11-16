@@ -149,7 +149,7 @@ const PropertyDevelopers = () => {
         </Row>
       </Container>
       <div className="impact-section">
-      <h2> <span className="highlight">Happy Customers</span></h2>
+      <h2> <span className="highlight">Our Achievements</span></h2>
       <div className="impact-stats">
         {impactData.map((item, index) => (
           <div key={index} className="impact-item">

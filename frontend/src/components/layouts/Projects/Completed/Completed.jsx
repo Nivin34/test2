@@ -39,7 +39,7 @@ const Completed = () => {
   <h2 className='heading'>
     {
       // Splitting the text "Ongoing Projects" into individual characters
-      "Complete Projects".split('').map((char, index) => (
+      "Completed Projects".split('').map((char, index) => (
         <span key={index} style={{
           display: 'inline-block',
           opacity: 0,

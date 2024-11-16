@@ -29,7 +29,7 @@
 
 .contact-item p {
   font-size: 1em;
-  color: #555;
+  color: #000;
   margin: 0;
 }
 
@@ -71,7 +71,7 @@
   }
   .contact-item p {
     font-size: 0.9em;
-    color: #555;
+    color: #000;
     margin:0;
 }
 }

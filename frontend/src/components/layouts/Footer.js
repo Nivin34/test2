@@ -12,8 +12,8 @@ const Footer = () => {
             <img src="/images/logo.png" alt="Praveen Property Developers Logo" className="footer-logo-image" />
             {/* <span className="footer-company-name">Praveen Property Developers</span> */}
             <div style={{ textAlign: 'center' }}>
-              <span className="company-name fw-bold">Praveen Property Developers</span>
-              <small className="d-block text-muted" style={{ fontSize: '0.85rem' }}> Builders & Promoters</small>
+              <span className="footer-company-name fw-bold">Praveen Property Developers</span>
+              <small className="d-block " style={{ fontSize: '0.85rem',color:'#3F070E' }}> Builders & Promoters</small>
             </div>
           </div>
           <p className="footer-description">

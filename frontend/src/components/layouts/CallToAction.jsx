@@ -11,7 +11,6 @@ const CallToAction = () => {
       ([entry]) => {
         // Check if the section is in view
         if (entry.isIntersecting) {
-          console.log('Section is in view'); // Debugging log
           setInView(true); // Trigger the animation when in view
         } else {
           setInView(false); // Reset if it goes out of view (optional)
@@ -34,16 +33,18 @@ const CallToAction = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className={`cta ${inView ? 'in-view' : ''}`}>
+    <section ref={sectionRef} className={`cta`}>
       <img 
         src="https://cdn.builder.io/api/v1/image/assets/TEMP/122a60dba1ff6f3ed1dc0b01668b182360900b59c51ad0cf65e461a7a0479c93?placeholderIfAbsent=true&apiKey=a1321863ba4e4bd8808d5b93faba38b9" 
         alt="Real estate background" 
         className="cta-background"
       />
       <div className="cta-content">
-        <h2 className="cta-title">Find your best<br />Real Estate</h2>
-        <p className="cta-description">We provide a complete service for the sale,<br />purchase or rental of real estate.</p>
-        <button className="cta-button"> 
+        <h2 className={`cta-title ${inView ? 'animate-left' : ''}`}>Find your best<br />Real Estate</h2>
+        <p className={`cta-description ${inView ? 'animate-left' : ''}`}>
+          We provide a complete service for the sale,<br />purchase or rental of real estate.
+        </p>
+        <button className={`cta-button ${inView ? 'animate-left' : ''}`}> 
           <Nav.Link href="/ContactPage" className="nav-link mx-2" style={{color:'white'}}>Contact Us</Nav.Link>
         </button>
       </div>
@@ -53,11 +54,7 @@ const CallToAction = () => {
           border-radius: 50px;
           margin-top: 113px;
           overflow: hidden;
-          opacity: 0; /* Start with the section hidden */
-          transition: opacity 1s ease-in-out; /* Smooth opacity transition */
-        }
-        .cta.in-view {
-          opacity: 1; /* Apply opacity change when in view */
+          opacity: 1; /* Section is always visible */
         }
 
         .cta-background {
@@ -75,9 +72,6 @@ const CallToAction = () => {
           flex-direction: column;
           justify-content: center;
           padding: 0 80px;
-          opacity: 0;
-          transform: translateX(100%); /* Start from the left */
-          animation: fadeInUp 1.5s ease-in-out forwards, leftToRight 0s ease-in-out forwards; /* Left-to-right animation */
           background: url(${call}) no-repeat center/cover;
         }
 
@@ -87,8 +81,9 @@ const CallToAction = () => {
           font-weight: 700;
           font-family: Arial, sans-serif;
           margin-bottom: 20px;
-           transform: translateX(-100%); /* Start from the left */
-          animation: fadeInUp 1.5s ease-in-out forwards, leftToRight 1.5s ease-in-out forwards; /* Left-to-right animation */
+           opacity: 0;
+          transform: translateX(-100%);
+          transition: transform 1s ease-in-out, opacity 1s ease-in-out;
         }
         .cta-description {
           color: #585981;
@@ -96,8 +91,9 @@ const CallToAction = () => {
           font-weight: 400;
           line-height: 36px;
           margin-bottom: 37px;
-           transform: translateX(-150%); /* Start from the left */
-          animation: fadeInUp 1.5s ease-in-out forwards, leftToRight 1.5s ease-in-out forwards; /* Left-to-right animation */
+          opacity: 0;
+          transform: translateX(-100%);
+          transition: transform 1s ease-in-out, opacity 1s ease-in-out;
         }
         .cta-button {
           align-self: flex-start;
@@ -111,8 +107,15 @@ const CallToAction = () => {
           padding: 14px 42px;
           border: none;
           cursor: pointer;
-           transform: translateX(-100%); /* Start from the left */
-          animation: fadeInUp 1.8s ease-in-out forwards, leftToRight 1.8s ease-in-out forwards; /* Left-to-right animation */
+          opacity: 0;
+          transform: translateX(-100%);
+          transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+        }
+
+        /* Animation class for when the section is in view */
+        .animate-left {
+          opacity: 1;
+          transform: translateX(0);
         }
 
         /* Responsive Design */
@@ -185,29 +188,6 @@ const CallToAction = () => {
           .cta-button {
             padding: 10px 20px;
             font-size: 16px;
-          }
-        }
-
-        /* Animation keyframes */
-        @keyframes fadeInUp {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-
-        @keyframes leftToRight {
-          from {
-            opacity: 0;
-            transform: translateX(-100%); /* Start from the left */
-          }
-          to {
-            opacity: 1;
-            transform: translateX(0); /* End at the normal position */
           }
         }
       `}</style>

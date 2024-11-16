@@ -213,7 +213,7 @@ p {
 }
 
 .impact-section .highlight {
-  color: #f9c846;
+  color:#3F070E;
 }
 
 .impact-stats {
@@ -239,7 +239,7 @@ p {
   gap: 0.5rem; /* Equal spacing between number and plus sign */
   font-size: 2.5rem; /* Larger font size for the number and plus */
   font-weight: bold;
-  color: #f9c846;
+  color:#3F070E;
   
 }
 
@@ -252,7 +252,7 @@ p {
 }
 
 .label {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #ffffff;
   margin-top: 0.5rem; /* Space between number and label */
 }
@@ -328,6 +328,6 @@ p {
 
 @media (max-width: 576px) {
   .about-us-title {
-    font-size: 1.5rem; /* Further reduce title size for extra small screens */
+    font-size: 1.8rem; /* Further reduce title size for extra small screens */
   }
 }

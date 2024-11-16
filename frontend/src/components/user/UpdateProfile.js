@@ -77,7 +77,7 @@ export default function UpdateProfile () {
                         name='name'
                         value={name}
                         onChange={e=>setName(e.target.value)}
-                         maxLength="5"
+                         maxLength="7"
                     />
                 </div>
 

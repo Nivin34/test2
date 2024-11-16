@@ -31,15 +31,15 @@ export default function Header() {
               className="me-2 logo"
             />
              <div style={{ textAlign: 'center' }}>
-              <span className="company-name fw-bold">Praveen Property Developers</span>
-              <small className="d-block text-muted slogen" style={{  }}> Builders & Promoters</small>
+              <span className="company-name fw-bold">PRAVEEN PROPERTY DEVELOPERS</span>
+              <small className="d-block text-muted slogen" style={{  }}> BUILDER & PROMOTERS</small>
             </div>
            
 
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" className="custom-navbar-toggle" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto align-items-center">
+            <Nav className="ms-auto align-items-center navbars">
               <Nav.Link href="/" className="nav-link mx-2">Home</Nav.Link>
               <Nav.Link href="/about" className="nav-link mx-2 ">About Us</Nav.Link>
 
