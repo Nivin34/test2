@@ -148,6 +148,9 @@ nav {
   font-weight: 400;
   color: #ff6600;
 }
+.slogen{
+  font-size: 0.95rem;
+}
 
 .link {
   margin-right: 80px;
@@ -633,7 +636,6 @@ ul.CTAs a {
     font-weight: 400;
     color: #ff6600;
   }
-
 }
 
 @media screen and (max-width: 780px) {
@@ -658,7 +660,7 @@ ul.CTAs a {
     color: #ff6600;
   }
   .slogen{
-    font-size: 0.57rem
+    font-size: 12px !important; 
   }
 }
   /* Import this CSS file if not already done */
@@ -678,4 +680,5 @@ ul.CTAs a {
   .logo{
     height: 40px !important;
 }
+
 }

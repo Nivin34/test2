@@ -32,7 +32,7 @@ export default function Header() {
             />
              <div style={{ textAlign: 'center' }}>
               <span className="company-name fw-bold">Praveen Property Developers</span>
-              <small className="d-block text-muted" style={{ fontSize: '0.95rem' }}> Builders & Promoters</small>
+              <small className="d-block text-muted slogen" style={{  }}> Builders & Promoters</small>
             </div>
            
 
