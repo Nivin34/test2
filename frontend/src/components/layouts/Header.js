@@ -28,7 +28,7 @@ export default function Header() {
               src= "/images/logo.png" 
               alt="Praveen Property Developers"
               style={{ height: '60px', marginRight: '10px' }}
-              className="me-2"
+              className="me-2 logo"
             />
              <div style={{ textAlign: 'center' }}>
               <span className="company-name fw-bold">Praveen Property Developers</span>
@@ -37,7 +37,7 @@ export default function Header() {
            
 
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle aria-controls="basic-navbar-nav" className="custom-navbar-toggle" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto align-items-center">
               <Nav.Link href="/" className="nav-link mx-2">Home</Nav.Link>
