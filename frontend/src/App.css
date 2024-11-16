@@ -634,3 +634,47 @@ ul.CTAs a {
     color: #ff6600;
   }
 }
+
+@media screen and (max-width: 780px) {
+  .search {
+    width: 20px !important;
+  }
+  .company-name{
+    font-family:'Inknut Antiqua';
+    font-size: 15px;
+    font-weight: 400;
+    color: #ff6600;
+  }
+  .slogen{
+    font-size: 0.67rem
+  }
+}
+@media screen and (max-width: 480px){
+  .company-name{
+    font-family:'Inknut Antiqua';
+    font-size: 15px;
+    font-weight: 400;
+    color: #ff6600;
+  }
+  .slogen{
+    font-size: 0.57rem
+  }
+}
+  /* Import this CSS file if not already done */
+/* Ensure styles apply specifically in mobile view */
+@media (max-width: 368px) {
+  /* Reduce the padding and font size for mobile */
+  .custom-navbar-toggle {
+    padding: 0.25rem 0.5rem ;
+    font-size: 0.9rem ;
+  }
+
+  /* Adjust the icon size within the toggle button */
+  .custom-navbar-toggle .navbar-toggler-icon {
+    width: 1.3rem ;
+    height: 1.3rem ;
+  }
+  .logo{
+    height: 40px !important;
+  }
+}
