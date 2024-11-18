@@ -61,7 +61,7 @@
   border-radius: 15px; /* Smooth corners */
   padding: 20px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  backdrop-filter: blur(6px); /* Glass blur effect */
+  backdrop-filter: blur(7px); /* Glass blur effect */
   -webkit-backdrop-filter: blur(10px); /* Safari support */
   border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for glass look */
   /* margin: 20px; */
@@ -76,7 +76,7 @@
     flex-direction: column;
   }
  .contact{
-  height: 150vh;
+  height: 190vh;
  }
   .contact-map iframe {
     height: 300px;

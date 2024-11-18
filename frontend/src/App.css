@@ -692,16 +692,19 @@ ul.CTAs a {
 @media screen and (max-width: 480px){
   .company-name{
     font-family:'Inknut Antiqua';
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 400;
     color: #ff6600;
   }
   .slogen{
     font-size: 8.5px !important; 
   }
+  .logo{
+    height: 40px !important;
+}
    /* Adjust the icon size within the toggle button */
    .custom-navbar-toggle .navbar-toggler-icon {
-    width: 1rem ;
+    width: 0.8rem ;
     height: 1rem ;
   }
 }
