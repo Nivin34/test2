@@ -17,7 +17,7 @@ const Footer = () => {
             </div>
           </div>
           <p className="footer-description">
-            Having solid experience in the real estate market, Praveen Property Developers in Chromepet presents a wide choice of residential, commercial and industrial properties to its clients. We Covered The Most Popular Area In South Chennai Around 15 kms From Tambaram Such As "Perungalathur, Urapakkam, Guduvancheri, West Tambarm, Etc".
+            Having solid experience in the real estate market, Praveen Property Developers in Chromepet presents a wide choice of residential, commercial and industrial properties to its clients. We Covered The Most Popular Area In South Chennai Around 15 kms From Tambaram Such As "Perungalathur, Urapakkam, Guduvancheri, <br/> West Tambarm, Etc".
           </p>
           <div className="footer-social">
           <a href="https://www.facebook.com/praveen.property.54" target="_blank" rel="noopener noreferrer">
@@ -44,7 +44,12 @@ const Footer = () => {
           <div className="footer-column">
             <h3 className="footer-column-title">Location</h3>
             <ul className="footer-list">
-              <li className='lli' ><a href="#">No. 219, GST Road, Chromepet, <br/> Chennai - 600044.</a></li>
+              <h5 className='footer-head'>Head Office </h5>
+              <li className='lli' >Old No.195, New No.219,GST Road,<br/> Chrompet,  Chennai - 600044.</li>
+              <h5 className='footer-head'>Branch Office</h5>
+              <li className='lli' >No. 23A/5, First Floor, Railway Station <br/>Road,
+              Tambaram Sanatorium,<br/> Chennai - 600047.</li>
+
               <li className='lli' ><a href="mailto:praveenpropertydevelopers123@gmail.com">praveenpropertydevelopers123 <br/> @gmail.com</a></li>
               {/* <li className='lli' ><a href="/con">Support</a></li> */}
             </ul>
@@ -189,8 +194,13 @@ const Footer = () => {
           white-space: nowrap;
           border: 0;
         }
+          .footer-head{
+          color:#FF6600}
          .footer-list>.lli>a{
          font-size:14px}
+            .footer-list>.lli{
+         font-size:14px;
+         color: #000}
         @media (max-width: 991px) {
           .footer-content {
             flex-direction: column;

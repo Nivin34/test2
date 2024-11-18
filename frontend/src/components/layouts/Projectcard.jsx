@@ -15,7 +15,7 @@ const projectsData = [
   { name: "Praveen Blossom", location: "Maduravoyal, Poonamallee", city: "Tamil Nadu 600077", price: "₹ 61,23,000", land: "Residential Land", imageUrl: Blossom ,route: "/PraveenBloosom"},
   { name: "Praveen Sai Garden", location: "Urappakkam, Chengalpattu", city: "Tamil Nadu 603202", price: "₹ 52,58,000", land: "Residential Land", imageUrl: Garden,route: "/PraveenSaiGarden" },
   { name: "Praveen Marvel", location: "Urappakkam, Chengalpattu", city: "Tamil Nadu 603202", price: "₹ 52,58,000", land: "Residential Land", imageUrl: Garden,route: "/PraveenMarvel" },
-  { name: "Praveen Sai Home", location: "Urappakkam, Chengalpattu", city: "Tamil Nadu 603202", price: "₹ 52,58,000", land: "Residential Land", imageUrl: Garden,route: "/PraveenSaiHome" },
+  { name: "Praveen Sai Home", location: "Urappakkam-s, Chengalpattu", city: "Tamil Nadu 603202", price: "₹ 52,58,000", land: "Residential Land", imageUrl: Home,route: "/PraveenSaiHome" },
 ];
 
 const ProjectCard = ({ name, location, city, price,route, land, imageUrl, isVisible, index }) => {

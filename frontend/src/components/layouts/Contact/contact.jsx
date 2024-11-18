@@ -3,7 +3,8 @@ import { Form, Button, Row, Col, Container, Tooltip, OverlayTrigger } from 'reac
 import emailjs from 'emailjs-com';
 import './contact.css';
 import bg from '../../assest/call.png';
-import { IoIosMail } from "react-icons/io";
+import { IoIosMail,IoMdCall } from "react-icons/io";
+import { IoLocation } from "react-icons/io5";
 
 const ContactPage = () => {
   const [validated, setValidated] = useState(false);
@@ -51,6 +52,7 @@ const ContactPage = () => {
   );
 
   return (
+    
     <div className='contact' style={{}}>
     <div
       style={{
@@ -59,39 +61,41 @@ const ContactPage = () => {
         backgroundPosition: 'center',
         height: '100vh',
         color: 'white',
+        
       }}
     >
-      <div className="contact-section" style={{ padding: '50px 0' }}>
-        <Container>
-          <Row>
+      <div className="contact-section glass-effect " style={{ padding: '50px 0' }}>
+        <Container  className='my-3'>
+          <Row >
             <Col md={6}>
               <div className="contact-info">
                 <div className="contact-item">
-                  <h3>📞 CALL US</h3>
+                  <h3><IoMdCall  size={35} color="#FF6600" /> CALL US</h3>
                   <p>99402 01853 / 89390 54111</p>
                 </div>
                 <div className="contact-item">
                   <h3>
-                    <IoIosMail size={35} color="red" /> Email id
+                    <IoIosMail size={35} color="#FF6600" /> Email id
                   </h3>
                   <p>praveenpropertydevelopers123@gmail.com</p>
                 </div>
                 <div className="contact-item">
                   <OverlayTrigger placement="top" overlay={renderTooltip}>
-                    <h3>📍 LOCATION</h3>
+                    <h3><IoLocation size={35} color="#FF6600" /> LOCATION</h3>
                   </OverlayTrigger>
-                  <p
-                    onClick={() => window.scrollTo(0, document.body.scrollHeight)}
-                    style={{ cursor: 'pointer' }}
-                  >
-                    No. 219, GST Road, Chromepet, Chennai - 600044.
+                  <h5>Head Office</h5>
+                  <p >
+                  Old No.195, New No.219,GST Road, Chrompet, <br /> Chennai-600044.
                   </p>
+                  <h5>Branch Office</h5>
+                  <p>No. 23A/5, First Floor, Railway Station Road, <br /> Tambaram Sanatorium,
+                  Chennai-600047.</p>
                 </div>
               </div>
             </Col>
             <Col md={6}>
               <h2>
-                Contact <span style={{ color: 'orange' }}>Us</span>
+               <span style={{ color: '#FF6600' }}> Contact Us</span>
               </h2>
               <Form noValidate validated={validated} onSubmit={handleSubmit} ref={form}>
                 <Form.Group className="mb-3" controlId="formName">

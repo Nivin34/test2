@@ -60,7 +60,7 @@ export default function Header() {
                 </Dropdown.Menu>
               </Dropdown>
 
-              <Nav.Link href="/ContactPage" className="nav-link mx-2">Contact Us</Nav.Link>
+              <Nav.Link href="/ContactPage" className="nav-link ">Contact Us</Nav.Link>
 
               <div className="d-flex align-items-center mx-3 ">
                 {isAuthenticated ? (
