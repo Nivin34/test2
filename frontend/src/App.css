@@ -148,10 +148,11 @@ nav {
 }
 .company-name{
   font-family:'Inknut Antiqua';
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 24px;
+  font-weight: 600;
   color: #ff6600;
   position: relative;
+  text-transform: uppercase ;
   left: -60px;
 }
 .logo{
